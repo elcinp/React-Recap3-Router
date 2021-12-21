@@ -1,14 +1,19 @@
 import React from "react";
 import {Nav,Container,Navbar,NavDropdown} from "react-bootstrap"
 import logo from "../assets/logo.png"
+import {useNavigate } from "react-router-dom"
 
 const MyNav = () => {
+    const navigate = useNavigate();
   return (
     <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" onSelect={(eventKey)=> navigate(`/${eventKey}`)}>
         <Container>
-          <Navbar.Brand href="#home">
-              <img src={logo} alt="" />
+          <Navbar.Brand>
+          <Nav.Link evetKey="home">
+
+              <img src={logo} alt="logoClarusway" />
+          </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -24,9 +29,9 @@ const MyNav = () => {
                 </NavDropdown.Item>
                 
               </NavDropdown>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#inst">Instructors</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link eventKey="about">About</Nav.Link>
+              <Nav.Link eventKey="instructors">Instructors</Nav.Link>
+              <Nav.Link eventKey="contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
