@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "bootstrap";
+import { Carousel } from "react-bootstrap";
 import devops from "../assets/devops.jpeg";
 import about from "../assets/about.jpeg";
 import isa from "../assets/isa.jpeg";
