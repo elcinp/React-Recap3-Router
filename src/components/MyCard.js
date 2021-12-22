@@ -1,7 +1,9 @@
 import React from "react";
 import {Card,Button} from "react-bootstrap"
+import {useNavigate} from "react-router-dom"
 
 const MyCard = (props) => {
+  const navigate = useNavigate()
   const {id,img,link,text,name} = props.course
   return (
     <div>
@@ -12,7 +14,7 @@ const MyCard = (props) => {
           <Card.Text>
             {text}
           </Card.Text>
-          <Button variant="primary">Details</Button>
+          <Button variant="primary" onClick={()=> navigate(`/${link}`)}>Details</Button>
         </Card.Body>
       </Card>
     </div>
