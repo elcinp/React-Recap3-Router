@@ -1,9 +1,15 @@
 import React from 'react'
 
-const Courses = () => {
+const Courses = ({data}) => {
+    console.log(data)
     return (
         <div>
-            <h1>Courses</h1>
+            <Container>
+                <Row>
+                    <Col></Col>
+                </Row>
+            </Container>
+            
         </div>
     )
 }
