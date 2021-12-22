@@ -7,7 +7,7 @@ const Courses = ({ data }) => {
   return (
     <div>
       <Container>
-        <Row>
+        <Row className="mb-3 d-flex justify-content-center">
           {data.map((course) => {
             return <Col key={course.id} xs={12} md={6} lg={4}>
                 <MyCard course={course}/>
