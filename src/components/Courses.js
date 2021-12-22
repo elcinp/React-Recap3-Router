@@ -9,7 +9,7 @@ const Courses = ({ data }) => {
       <Container>
         <Row>
           {data.map((course) => {
-            return <Col xs={12} md={6} lg={4}>
+            return <Col key={course.id} xs={12} md={6} lg={4}>
                 <MyCard course={course}/>
             </Col>;
           })}
