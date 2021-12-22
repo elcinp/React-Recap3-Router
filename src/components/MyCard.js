@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom"
 
 const MyCard = (props) => {
   const navigate = useNavigate()
-  const {id,img,link,text,name} = props.course
+  const {img,link,text,name} = props.course
   return (
     <div>
       <Card style={{ width: "18rem" }}>
