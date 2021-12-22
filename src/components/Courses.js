@@ -6,8 +6,8 @@ const Courses = ({ data }) => {
   console.log(data);
   return (
     <div>
-      <Container>
-        <Row className="mb-3 d-flex justify-content-center">
+      <Container className="text-center mt-4" style={{ height:"500px"}}>
+        <Row className="d-flex justify-content-center">
           {data.map((course) => {
             return (
               <Col
