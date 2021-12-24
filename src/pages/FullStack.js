@@ -20,7 +20,7 @@ const FullStack = () => {
               starts with the IT Fundamentals module for beginners and continues
               with front-end and back-end developer course modules. Do you get
               excited about learning new things? Are you ready to give your
-              career a boost?
+              career a boost? 
             </p>
             <Col>
               <button className="btn btn-danger">Apply</button>
